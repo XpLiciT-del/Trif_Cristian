@@ -44,7 +44,7 @@ The database contains the following tables:
 ## 📎 PDF Version
 
 You can also find the full documented version of the project (with explanations and screenshots) in the attached PDF file:  
-**👉 [Proiect Final Trif Cristian SQL.pdf](./Proiect%20Final%20Trif%20Cristian%20SQL.pdf)**
+**👉 [Proiect Final Trif Cristian SQL.pdf](./Proiect%20Final%20Trif%20Cristian%20SQL%20PDF.pdf)**
 
 ## 👤 Author
 
