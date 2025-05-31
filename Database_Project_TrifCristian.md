@@ -159,7 +159,11 @@ VALUES
   ('Bec far', 30),
   ('Plăcuțe frână', 20);
 
---After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
+```
+
+After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
+
+```sql
 
 UPDATE Clienti
 SET telefon = '0744000111'
@@ -175,7 +179,11 @@ WHERE nume = 'Ion Ionescu';
 
 UPDATE Piese SET stoc = 9 WHERE id_piesa = 1;
 
---After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
+```
+
+After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
+
+```sql
 
 DELETE FROM Clienti
 WHERE nume = 'Denisa';
