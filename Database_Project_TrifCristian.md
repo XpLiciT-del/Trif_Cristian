@@ -101,14 +101,14 @@ CREATE TABLE Permise (
     FOREIGN KEY (id_mecanic) REFERENCES Mecanici(id_mecanic)
 );
 
+```
+
 After the database and the tables were created, I used a few additional DDL commands to manage and clean specific tables.  
 These included `DROP COLUMN` to remove unnecessary fields and `TRUNCATE` to quickly delete all data from a table while keeping its structure intact, as described below:
 
 ```sql
-TRUNCATE TABLE Mecanici;
-
-ALTER TABLE Clienti DROP COLUMN adresa;
-
+ALTER TABLE Permise RENAME TO Permise_Mecanici;
+ALTER TABLE Masini ADD COLUMN culoare_masinii VARCHAR(20);
 
 
 ```
