@@ -116,6 +116,7 @@ After the database and the tables were created, I used a few additional DDL comm
 These included `DROP COLUMN` to remove unnecessary fields and `TRUNCATE` to quickly delete all data from a table while keeping its structure intact, as described below:
 
 ```sql
+
 TRUNCATE TABLE Mecanici;
 DROP TABLE Feedback;
 
