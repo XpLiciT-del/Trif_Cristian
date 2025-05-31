@@ -145,7 +145,11 @@ ALTER TABLE Piese ADD COLUMN stoc INT;
   In the testing process, this necessary data is identified in the Test Design phase and created in the Test Implementation phase.
 
 ```sql
-INSERT INTO Clienti (nume, telefon, email, cnp) VALUES ('Marcel Popescu', '0722000000', 'marcel@email.com', '1980101223344');
+INSERT INTO Clienti (nume, telefon, email, cnp) VALUES 
+('Cristi', '0744000111', 'cristi@email.com', NULL),
+('Gina', '0722222222', 'gina.no@email.com', NULL),
+('Vasile Pop', '0724000000', 'vasile@email.com', NULL),
+('Marcel', '0724000000', 'marcel@email.com', '1980101223344'),
 
 INSERT INTO Masini (id_client, marca, model) VALUES (1, 'Dacia', 'Logan');
 
@@ -162,6 +166,9 @@ INSERT INTO Mecanici_Reparatii (id_mecanic, id_reparatie) VALUES (1, 1);
 INSERT INTO Permise (id_mecanic, tip_permis) VALUES (1, 'B');
 
 INSERT INTO Clienti VALUES (5, 'Ana Radu', 'ana@email.com', '0733111222', '2871010112233');
+
+INSERT INTO Clienti 
+VALUES (NULL, 'Denisa', '0723111222', 'denisa@email.com', '2970101223344');
 
 INSERT INTO Piese (nume_piesa, stoc)
 VALUES 
